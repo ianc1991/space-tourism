@@ -5,7 +5,7 @@
     font-family: 'Barlow Condensed', sans -serif;
     font-size: 16px;
     color: #ffffff;
-    letter-spacing: 2.35;
+    letter-spacing: 2.35px;
     display: flex;
     position: fixed;
     width: 100%;
@@ -19,7 +19,6 @@ ul {
     flex-direction: row;
     margin: auto;
     background-color: rgba(207, 207, 207, 0.2);
-
 }
 
 li {
@@ -37,7 +36,12 @@ li:hover {
 }
 
 .blankSpan1 {
-    width: 50vw;
+    width: 30vw;
+}
+
+.activeLink {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding: 2% 0;
 }
 
 /* logo */
