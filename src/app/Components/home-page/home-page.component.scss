@@ -1,15 +1,17 @@
 div.container {
-    height: 100vh;
     background: url('../../../assets/home/background-home-desktop.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     width: auto;
-
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
-.textElementContainer {
+.elementContainer {
     display: flex;
 }
 
@@ -19,7 +21,6 @@ div.container {
     flex-direction: column;
     padding-top: 20%;
     margin-left: 10%;
-
 }
 
 h5 {
