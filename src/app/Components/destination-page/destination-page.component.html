@@ -1,1 +1,36 @@
-<p>destination-page works!</p>
+<div class="container">
+
+    <div class="innerContainer">
+        <p class="title"><span>01</span> PICK YOUR DESTINATION</p>
+
+        <div class="planetContainer">
+
+            <div class="planetImage">
+                <img [src]="imgSource">
+            </div>
+
+            <div class="planetDescription">
+                <ul>
+                    <a (click)='togglePlanetDescription("moon")' [ngClass]="{'activeTab': activeTab === 'moon'}"><li>MOON</li></a>
+                    <a (click)='togglePlanetDescription("mars")' [ngClass]="{'activeTab': activeTab === 'mars'}"><li>MARS</li></a>
+                    <a (click)='togglePlanetDescription("europa")' [ngClass]="{'activeTab': activeTab === 'europa'}"><li>EUROPA</li></a>
+                    <a (click)='togglePlanetDescription("titan")' [ngClass]="{'activeTab': activeTab === 'titan'}"><li>TITAN</li></a>
+                </ul>
+                <h2>{{ planetTitle }}</h2>
+                <p class="planetText">{{ planetText }}</p>
+                <hr>
+                <div class="distanceContainer">
+                    <div class="avgDContainer">
+                        <p class="avgDistance">Average Distance</p>
+                        <p class="avgDistanceText">{{ avgDistance }}</p>
+                    </div>
+                    <div class="travelTimeContainer">
+                        <p class='travelTime'>Travel Time</p>
+                        <p class="travelTimeText">{{ travelTime }}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

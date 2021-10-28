@@ -16,7 +16,7 @@ import { TechnologyPageComponent } from './Components/technology-page/technology
     HomePageComponent,
     DestinationPageComponent,
     CrewPageComponent,
-    TechnologyPageComponent
+    TechnologyPageComponent,
   ],
   imports: [
     BrowserModule,
