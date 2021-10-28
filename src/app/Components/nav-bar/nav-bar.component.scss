@@ -1,0 +1,47 @@
+
+
+
+.container {
+    font-family: 'Barlow Condensed', sans -serif;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 2.35;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background-color: rgba(207, 207, 207, 0.2);
+
+}
+
+li {
+    list-style-type: none;
+    margin: 0px 40px;
+    padding: 35px 0;
+    
+}
+
+li:hover {
+    color: #15f4ee;
+    border-bottom: 3px solid rgb(143, 143, 202);
+    cursor: pointer;
+    padding: 2% 0;
+}
+
+.blankSpan1 {
+    width: 50vw;
+}
+
+/* logo */
+
+.logoContainer {
+    margin-left: 30px;
+}
