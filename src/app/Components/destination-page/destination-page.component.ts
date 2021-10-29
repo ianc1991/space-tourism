@@ -80,11 +80,6 @@ export class DestinationPageComponent implements OnInit {
       this.travelTime = this.titan.travelTime;
     }
 
-    this.activeTabChanger(planet);
-  }
-
-  // Keeps active tab underlined
-  activeTabChanger(activeTabValue: string) {
-    this.activeTab = activeTabValue;
+    this.activeTab = planet;
   }
 }

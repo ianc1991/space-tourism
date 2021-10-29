@@ -12,3 +12,9 @@ export interface Crew {
     text: string,
     image: string
 }
+
+export interface Tech {
+    techName: string,
+    text: string,
+    image: string
+}

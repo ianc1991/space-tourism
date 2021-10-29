@@ -1,0 +1,100 @@
+div.container {
+    background: url('../../../assets/technology/background-technology-desktop.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.innerContainer {
+    margin: 30vh 0 0 10%;
+    height: 70vh;
+}
+
+.launchTextContainer {
+    width: 50%;
+}
+
+.mainContentContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.launchText {
+    display: flex;
+    width: 50%;
+}
+
+// TODO - Refactor p.title and span to styles.scss - this is used 3 times.
+p.title {
+    font-family: 'Barlow Condensed', sans -serif;
+    color: white;
+    letter-spacing: 2.2px;
+    font-size: 30px;
+}
+
+span {
+    color: #545c85;
+}
+
+h3 {
+    font-family: 'Bellefair';
+    font-size: 50px;
+    color: white;
+    margin-top: 0;
+    width: 30vw;
+}
+
+.bodyText {
+    font-family: 'Barlow Condensed', sans -serif;
+    color: #D0D6F9;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 70px;
+    width: 70%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-family: 'Barlow Condensed', sans -serif;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    border: solid 1px #545c85;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+button:active {
+    background-color: transparent;
+}
+
+.activeTab {
+    background-color: white;
+    color: black;
+}
+
+h5 {
+    font-family: 'Barlow Condensed', sans -serif;
+    color: #D0D6F9;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    margin-bottom: 1%;
+}

@@ -1,1 +1,28 @@
-<p>technology-page works!</p>
+<div class="container">
+    <div class="innerContainer">
+        
+        <p class="title"><span>03</span> SPACE LAUNCH 101</p>
+
+        <div class='mainContentContainer'>
+            <div class="launchTextContainer">
+                <div class="launchText">
+                    <div class="buttons">
+                        <button (click)='toggleTechDescription("launch")' [ngClass]="{'activeTab': activeTab === 'launch'}">1</button>
+                        <button (click)='toggleTechDescription("port")' [ngClass]="{'activeTab': activeTab === 'port'}">2</button>
+                        <button (click)='toggleTechDescription("capsule")' [ngClass]="{'activeTab': activeTab === 'capsule'}">3</button>
+                    </div>
+                    <div class="bodyText">
+                        <p>The terminology..</p>
+                        <h3>{{techName}}</h3>
+                        <p>{{bodyText}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imgContainer">
+                <img [src] ='imgSrc'>
+            </div>
+        </div>
+
+        
+    </div>
+</div>

@@ -78,11 +78,7 @@ export class CrewPageComponent implements OnInit {
       this.crewText = this.crewAnousheh.text;
     }
 
-    this.activeTabChanger(crewMember);
-  }
-
-  activeTabChanger(activeTabValue: string) {
-    this.activeTab = activeTabValue;
+    this.activeTab = crewMember;
   }
 
 }
