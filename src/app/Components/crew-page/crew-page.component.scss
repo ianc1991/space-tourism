@@ -1,0 +1,90 @@
+div.container {
+    background: url('../../../assets/crew/background-crew-desktop.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.innerContainer {
+    margin: 30vh 0 0 10%;
+    height: 70vh;
+}
+
+.crewContainer {
+    display: flex;
+    height: 60vh;
+}
+
+.crewDescription {
+    margin-right: 22%;
+}
+
+p.title {
+    font-family: 'Barlow Condensed', sans -serif;
+    color: white;
+    letter-spacing: 2.2px;
+    font-size: 30px;
+}
+
+span {
+    color: #545c85;
+}
+
+h4 {
+    font-family: 'Barlow Condensed';
+    font-size: 30px;
+    color: rgb(192, 187, 187);
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-family: 'Bellefair';
+    font-size: 50px;
+    color: white;
+    margin-top: 0;
+}
+
+.crewText {
+    font-family: 'Barlow Condensed', sans -serif;
+    color: #D0D6F9;
+    font-size: 20px;
+    line-height: 1.5;
+    min-height: 50%;
+    max-width: 400px;
+}
+
+img {
+    max-height: 600px;
+    margin-top: -5%;
+}
+
+.sliderButtons {    
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 200px;
+    padding-left: 0;
+}
+
+.sliderButtons a {
+    width: 15px;
+    height: 15px;
+    background: rgb(192, 187, 187);
+    border-radius: 50%
+}
+
+.sliderButtons a:hover {
+    background: white;
+    cursor: pointer;
+}
+
+.activeTab {
+    background: white !important;
+}

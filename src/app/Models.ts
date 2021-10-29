@@ -5,3 +5,10 @@ export interface Planet {
     avgDistance: string,
     travelTime: string
 }
+
+export interface Crew {
+    jobTitle: string,
+    name: string,
+    text: string,
+    image: string
+}

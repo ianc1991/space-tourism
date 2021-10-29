@@ -1,1 +1,27 @@
-<p>crew-page works!</p>
+<div class="container">
+    <div class="innerContainer">
+        
+        <p class="title"><span>02</span> MEET YOUR CREW</p>
+
+        <div class="crewContainer">
+            <div class="crewDescription">                
+                <h4>{{crewJobTitle}}</h4>
+                <h3>{{crewName}}</h3>
+                <p class="crewText">{{crewText}}</p>
+                <div>
+                    <ul class="sliderButtons">
+                        <a (click)='toggleCrewDescription("douglas")' [ngClass]="{'activeTab': activeTab === 'douglas'}"><li ></li></a>
+                        <a (click)='toggleCrewDescription("mark")' [ngClass]="{'activeTab': activeTab === 'mark'}"><li ></li></a>
+                        <a (click)='toggleCrewDescription("victor")' [ngClass]="{'activeTab': activeTab === 'victor'}"><li ></li></a>
+                        <a (click)='toggleCrewDescription("anousheh")' [ngClass]="{'activeTab': activeTab === 'anousheh'}"><li ></li></a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="crewImage">
+                <img [src]="crewImg">
+            </div>
+
+        </div>
+    </div>
+</div>

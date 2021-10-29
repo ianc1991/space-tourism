@@ -49,6 +49,7 @@ export class DestinationPageComponent implements OnInit {
   }
 
   // TODO - Could probably refactor this to an NgFor in template
+  // Update planet information when tab is clicked
   togglePlanetDescription(planet: string) {
     if (planet == 'moon') {
       this.imgSource = this.moon.image;
@@ -82,6 +83,7 @@ export class DestinationPageComponent implements OnInit {
     this.activeTabChanger(planet);
   }
 
+  // Keeps active tab underlined
   activeTabChanger(activeTabValue: string) {
     this.activeTab = activeTabValue;
   }

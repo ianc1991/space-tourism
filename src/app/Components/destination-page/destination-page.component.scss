@@ -4,7 +4,6 @@ div.container {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    width: auto;
     height: 100vh;
     overflow: scroll;
     overflow-x: auto;
@@ -23,11 +22,15 @@ p.title {
     font-size: 30px;
 }
 
+span {
+    color: #545c85;
+    
+}
+
 ul {
     display: flex;
     list-style-type: none;
     width: 100%;
-    // width: 20vw;
     justify-content: center;
     padding-right: 100px;
     font-family: 'Barlow Condensed', sans -serif;
@@ -50,7 +53,7 @@ a:hover {
 
 .activeTab {
     border-bottom: 3px solid white;
-    color: white;    
+    color: white;
 }
 
 h2 {
@@ -60,10 +63,6 @@ h2 {
     width: 100%;
 }
 
-span {
-    color: #545c85;
-    
-}
 
 .planetContainer {
     display: flex;
@@ -83,8 +82,13 @@ span {
     padding-top: 80px;    
 }
 
-img {
+
+// TODO - animate things on switch
+.reanimate {
     animation: fadeIn 1.5s;
+}
+.disabledAnimation {
+    opacity: 1;
 }
 
 @keyframes fadeIn {
@@ -119,6 +123,5 @@ hr {
 
 .avgDistanceText, .travelTimeText {
     font-family: 'Bellefair';
-    font-size: 28px;
-    
+    font-size: 28px;    
 }
