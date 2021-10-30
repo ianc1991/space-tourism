@@ -49,9 +49,7 @@ export class DestinationPageComponent implements OnInit {
   constructor() { }
 
   async ngOnInit(): Promise<void> {
-
-    await this.animationTimer(1501);
-    
+    await this.animationTimer(1501);    
     this.reanimate=false;
     this.linkDisabled = false;
   }
@@ -87,16 +85,14 @@ export class DestinationPageComponent implements OnInit {
       this.avgDistance = this.titan.avgDistance;
       this.travelTime = this.titan.travelTime;
     }
-
     this.activeTab = planet;
-    await this.animationTimer(1501);
-    
+    await this.animationTimer(1501);    
     this.reanimate=false;
     this.linkDisabled = false;
   }
 
 
-  //TODO - this is awful
+  //TODO - this is awful (maybe okay)
   async animationTimer (ms: number) {
     this.linkDisabled = true;
     this.reanimate=true;

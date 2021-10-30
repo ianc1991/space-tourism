@@ -80,6 +80,10 @@ h2 {
 
 .planetImage {
     padding-top: 80px;
+    max-width: 445px;
+    max-height: 445px;
+    height: 40vw;
+    width: 40vw;
 }
 
 
@@ -103,7 +107,7 @@ h2 {
     width: 60%;
     font-family: 'Barlow Condensed', sans -serif;
     color: #D0D6F9;
-    font-size: 20px;
+    font-size: 1.5vw;
     line-height: 1.5;
 }
 
@@ -119,12 +123,16 @@ hr {
 
 .avgDistance, .travelTime {
     font-family: 'Barlow Condensed', sans -serif;
-    font-size: 14px;
+    font-size: 1.3vw;
     letter-spacing: 2.35px;
     color: #D0D6F9;
 }
 
+.travelTimeContainer {
+    margin-left: 10px;
+}
+
 .avgDistanceText, .travelTimeText {
     font-family: 'Bellefair';
-    font-size: 28px;    
+    font-size: 1.5vw;    
 }

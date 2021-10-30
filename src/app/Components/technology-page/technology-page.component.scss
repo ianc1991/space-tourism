@@ -1,100 +1,116 @@
-div.container {
-    background: url('../../../assets/technology/background-technology-desktop.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: auto;
-    height: 100vh;
-    overflow: scroll;
-    overflow-x: auto;
-    overflow-y: auto;
-}
 
-.innerContainer {
-    margin: 30vh 0 0 10%;
-    height: 70vh;
-}
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+    div.container {
+        background: url('../../../assets/technology/background-technology-desktop.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: auto;
+        height: 100vh;
+        overflow: scroll;
+        overflow-x: auto;
+        overflow-y: auto;
+    }
 
-.launchTextContainer {
-    width: 50%;
-}
+    .innerContainer {
+        margin: 30vh 0 0 10%;
+        height: 70vh;
+    }
 
-.mainContentContainer {
-    display: flex;
-    justify-content: space-between;
-}
+    .launchTextContainer {
+        width: 50%;
+    }
 
-.launchText {
-    display: flex;
-    width: 50%;
-}
+    .mainContentContainer {
+        display: flex;
+        justify-content: space-between;
+    }
 
-// TODO - Refactor p.title and span to styles.scss - this is used 3 times.
-p.title {
-    font-family: 'Barlow Condensed', sans -serif;
-    color: white;
-    letter-spacing: 2.2px;
-    font-size: 30px;
-}
+    .launchText {
+        display: flex;
+        width: 50%;
+    }
 
-span {
-    color: #545c85;
-}
+    // TODO - Refactor p.title and span to styles.scss - this is used multiple times.
+    p.title {
+        font-family: 'Barlow Condensed', sans -serif;
+        color: white;
+        letter-spacing: 2.2px;
+        font-size: 30px;
+    }
 
-h3 {
-    font-family: 'Bellefair';
-    font-size: 50px;
-    color: white;
-    margin-top: 0;
-    width: 30vw;
-}
+    span {
+        color: #545c85;
+    }
 
-.bodyText {
-    font-family: 'Barlow Condensed', sans -serif;
-    color: #D0D6F9;
-    font-size: 20px;
-    line-height: 1.5;
-    margin-left: 70px;
-    width: 70%;
-}
+    h3 {
+        font-family: 'Bellefair';
+        font-size:3vw;
+        color: white;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 30vw;
+    }
 
-.buttons {
-    display: flex;
-    flex-direction: column;
-}
+    .bodyText {
+        font-family: 'Barlow Condensed', sans -serif;
+        color: #D0D6F9;
+        font-size: 1.5vw;
+        line-height: 1.5;
+        margin-top: 0;
+        margin-left: 70px;
+        width: 30vw;
+    }
 
-button {
-    font-family: 'Barlow Condensed', sans -serif;
-    font-size: 20px;
-    color: white;
-    background-color: transparent;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-bottom: 40px;
-    border: solid 1px #545c85;
-    cursor: pointer;
-}
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
 
-button:hover {
-    background-color: white;
-    color: black;
-}
+    button {
+        font-family: 'Barlow Condensed', sans -serif;
+        font-size: 20px;
+        color: white;
+        background-color: transparent;
+        max-width: 85px;
+        max-height: 85px;
+        width: 6vw;
+        height: 6vw;
+        border-radius: 50%;
+        margin-bottom: 2vh;
+        border: solid 1px #545c85;
+        cursor: pointer;
+    }
 
-button:active {
-    background-color: transparent;
-}
+    button:hover {
+        background-color: white;
+        color: black;
+    }
 
-.activeTab {
-    background-color: white;
-    color: black;
-}
+    button:active {
+        background-color: transparent;
+    }
 
-h5 {
-    font-family: 'Barlow Condensed', sans -serif;
-    color: #D0D6F9;
-    font-size: 28px;
-    letter-spacing: 4.75px;
-    margin-bottom: 1%;
+    .activeTab {
+        background-color: white;
+        color: black;
+    }
+
+    h5 {
+        font-family: 'Barlow Condensed', sans -serif;
+        color: #D0D6F9;
+        font-size: 28px;
+        letter-spacing: 4.75px;
+        margin-bottom: 1%;
+    }
+
+    img {
+        max-height: 580px;
+        max-width: 580px;
+        height: 40vw;
+        width:40vw;
+        
+    }
 }
