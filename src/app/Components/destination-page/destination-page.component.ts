@@ -1,3 +1,4 @@
+import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Planet } from 'src/app/Models';
 
@@ -42,15 +43,22 @@ export class DestinationPageComponent implements OnInit {
   avgDistance: string = this.moon.avgDistance;
   travelTime: string = this.moon.travelTime;
   activeTab: string = 'moon';
+  reanimate: boolean = false;
+  linkDisabled: boolean = false;
 
   constructor() { }
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
+
+    await this.animationTimer(1501);
+    
+    this.reanimate=false;
+    this.linkDisabled = false;
   }
 
-  // TODO - Could probably refactor this to an NgFor in template
-  // Update planet information when tab is clicked
-  togglePlanetDescription(planet: string) {
+  
+
+  async togglePlanetDescription(planet: string) {
     if (planet == 'moon') {
       this.imgSource = this.moon.image;
       this.planetTitle = this.moon.title;
@@ -81,5 +89,18 @@ export class DestinationPageComponent implements OnInit {
     }
 
     this.activeTab = planet;
+    await this.animationTimer(1501);
+    
+    this.reanimate=false;
+    this.linkDisabled = false;
   }
+
+
+  //TODO - this is awful
+  async animationTimer (ms: number) {
+    this.linkDisabled = true;
+    this.reanimate=true;
+    return new Promise(res => setTimeout(res, ms));
+  }
+
 }

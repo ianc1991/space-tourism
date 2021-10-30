@@ -79,21 +79,24 @@ h2 {
 }
 
 .planetImage {
-    padding-top: 80px;    
+    padding-top: 80px;
 }
 
 
 // TODO - animate things on switch
-.reanimate {
+.animate {
     animation: fadeIn 1.5s;
 }
-.disabledAnimation {
-    opacity: 1;
+
+.isDisabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
 }
 
 @keyframes fadeIn {
     0% {opacity:0;}
-    100% {opacity:1;}
+    100% {opacity:100%;}
   }
 
 .planetText {
