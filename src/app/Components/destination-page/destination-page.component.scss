@@ -1,138 +1,143 @@
-div.container {
-    background: url('../../../assets/destination/background-destination-desktop.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100vh;
-    overflow: scroll;
-    overflow-x: auto;
-    overflow-y: auto;
-}
 
-.innerContainer {
-    margin: 30vh 0 0 10%;
-    height: 70vh;
-}
+/* For desktop: */
+@media only screen and (min-width: 768px) {
 
-p.title {
-    font-family: 'Barlow Condensed', sans -serif;
-    color: white;
-    letter-spacing: 2.2px;
-    font-size: 30px;
-}
+    div.container {
+        background: url('../../../assets/destination/background-destination-desktop.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100vh;
+        overflow: scroll;
+        overflow-x: auto;
+        overflow-y: auto;
+    }
 
-span {
-    color: #545c85;
-    
-}
+    .innerContainer {
+        margin: 30vh 0 0 10%;
+        height: 70vh;
+    }
 
-ul {
-    display: flex;
-    list-style-type: none;
-    width: 100%;
-    justify-content: center;
-    padding-right: 100px;
-    font-family: 'Barlow Condensed', sans -serif;
-    font-size: 16px;
-    color: #D0D6F9;
-}
+    p.title {
+        font-family: 'Barlow Condensed', sans -serif;
+        color: white;
+        letter-spacing: 2.2px;
+        font-size: 30px;
+    }
 
-li {
-    margin: 12px;
-}
+    span {
+        color: #545c85;
+        
+    }
 
-a {
-    border-bottom: 3px solid transparent;
-}
+    ul {
+        display: flex;
+        list-style-type: none;
+        width: 100%;
+        justify-content: center;
+        padding-right: 100px;
+        font-family: 'Barlow Condensed', sans -serif;
+        font-size: 16px;
+        color: #D0D6F9;
+    }
 
-a:hover {
-    cursor: pointer;
-    border-bottom: 3px solid rgb(143, 143, 202)
-}
+    li {
+        margin: 12px;
+    }
 
-.activeTab {
-    border-bottom: 3px solid white;
-    color: white;
-}
+    a {
+        border-bottom: 3px solid transparent;
+    }
 
-h2 {
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 0;
-    width: 100%;
-}
+    a:hover {
+        cursor: pointer;
+        border-bottom: 3px solid rgb(143, 143, 202)
+    }
 
+    .activeTab {
+        border-bottom: 3px solid white;
+        color: white;
+    }
 
-.planetContainer {
-    display: flex;
-    height: 60vh;
-}
-
-.planetDescription {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    padding-right: 300px;
-    
-}
-
-.planetImage {
-    padding-top: 80px;
-    max-width: 445px;
-    max-height: 445px;
-    height: 40vw;
-    width: 40vw;
-}
+    h2 {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 0;
+        width: 100%;
+    }
 
 
-// TODO - animate things on switch
-.animate {
-    animation: fadeIn 1.5s;
-}
+    .planetContainer {
+        display: flex;
+        height: 60vh;
+    }
 
-.isDisabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-    pointer-events: none;
-}
+    .planetDescription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        padding-right: 300px;
+        
+    }
 
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:100%;}
-  }
+    .planetImage {
+        padding-top: 80px;
+        max-width: 445px;
+        max-height: 445px;
+        height: 40vw;
+        width: 40vw;
+    }
 
-.planetText {
-    width: 60%;
-    font-family: 'Barlow Condensed', sans -serif;
-    color: #D0D6F9;
-    font-size: 1.5vw;
-    line-height: 1.5;
-}
 
-hr {
-    width: 60%;
-}
+    // TODO - animate things on switch
+    .animate {
+        animation: fadeIn 1.5s;
+    }
 
-.distanceContainer {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-}
+    .isDisabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+        pointer-events: none;
+    }
 
-.avgDistance, .travelTime {
-    font-family: 'Barlow Condensed', sans -serif;
-    font-size: 1.3vw;
-    letter-spacing: 2.35px;
-    color: #D0D6F9;
-}
+    @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:100%;}
+    }
 
-.travelTimeContainer {
-    margin-left: 10px;
-}
+    .planetText {
+        width: 60%;
+        font-family: 'Barlow Condensed', sans -serif;
+        color: #D0D6F9;
+        font-size: max(1.2vw, 15px);
+        line-height: 1.5;
+    }
 
-.avgDistanceText, .travelTimeText {
-    font-family: 'Bellefair';
-    font-size: 1.5vw;    
+    hr {
+        width: 60%;
+    }
+
+    .distanceContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+
+    .avgDistance, .travelTime {
+        font-family: 'Barlow Condensed', sans -serif;
+        font-size: 1.3vw;
+        letter-spacing: 2.35px;
+        color: #D0D6F9;
+    }
+
+    .travelTimeContainer {
+        margin-left: 10px;
+    }
+
+    .avgDistanceText, .travelTimeText {
+        font-family: 'Bellefair';
+        font-size: 1.5vw;    
+    }
 }
