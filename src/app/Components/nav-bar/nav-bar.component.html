@@ -1,21 +1,27 @@
 <div class="container">
+    <input id="nav-toggle-id" type="checkbox" class="nav-toggle">
     <div class="logoContainer">
-        <img src='../../../assets/shared/logo.svg'>
+        <div class="logo">
+            <img src='../../../assets/shared/logo.svg'>
+        </div>
 
-    </div>
-    
-    <div class="navContainer">
-        <nav>
-            <ul>
-                <li routerLinkActive='activeLink' routerLink='home'>00 HOME</li>
-                <li routerLinkActive='activeLink' routerLink='destination'>01 DESTINATION</li>
-                <li routerLinkActive='activeLink' routerLink='crew'>02 CREW</li>
-                <li routerLinkActive='activeLink' routerLink='technology'>03 TECHNOLOGY</li>
-                <span class="blankSpan1"> </span>
-            </ul>
+        <div class="dropDownMenu">
+            <label for="nav-toggle-id">
+                <img class="hamburger" src="../../../assets/shared/icon-hamburger.svg">
+                <img class="close" src="../../../assets/shared/icon-close.svg">
+            </label>
             
-        </nav>
-
+        </div>
+        
     </div>
+
+    <nav>
+        <ul>
+            <li routerLinkActive='activeLink' routerLink='home'><span class="nav-number">00</span> HOME</li>
+            <li routerLinkActive='activeLink' routerLink='destination'><span class="nav-number">01</span> DESTINATION</li>
+            <li routerLinkActive='activeLink' routerLink='crew'><span class="nav-number">02</span> CREW</li>
+            <li routerLinkActive='activeLink' routerLink='technology'><span class="nav-number">03</span> TECHNOLOGY</li>
+        </ul>
+    </nav>
 
 </div>

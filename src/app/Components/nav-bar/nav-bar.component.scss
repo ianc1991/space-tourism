@@ -1,6 +1,114 @@
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*            */
+/*            */
+/* For Mobile */
+.container {
+    font-family: 'Barlow Condensed', sans -serif;
+    font-size: 1rem;
+    color: #ffffff;
+    letter-spacing: 2.35px;
+    position: fixed;
+    width: 100%;
+    height: 4em;
+    top: 3em;
+    z-index: 999;
+    user-select: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logoContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 1em;
+}
+
+.dropDownMenu {
+    margin-right: 1em;
+}
+
+.nav-toggle:checked ~ nav ul,
+.nav-toggle:checked ~ div .close {
+    display: block;
+}
+
+// For animating the hamburger menu drop down
+.nav-toggle:checked ~ nav ul {
+    transform: scale(1, 1);
+}
+
+.close {
+    display: none;
+}
+
+.nav-toggle:checked ~ div .hamburger {
+    display: none;
+}
+
+
+nav {
+    position:absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.575);
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;    
+    position:absolute;
+    right: 0;
+}
+
+.nav-toggle:checked ~ nav li {
+    opacity: 1;
+    transition: opacity 150ms ease-in-out 200ms;
+}
+
+li {
+    margin-right: 1em;
+    list-style-type: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2vmin;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+    padding-right: 8px;
+}
+
+li:hover {
+    color: #15f4ee;
+    cursor: pointer;
+}
+
+.activeLink {
+    border-right: 3px solid rgb(255, 255, 255);
+    color: #15f4ee;
+}
+
 /* For desktop: */
-@media only screen and (min-device-width: 768px) {
+@media screen and (min-width: 768px) {
     
     .container {
         font-family: 'Barlow Condensed', sans -serif;
@@ -15,33 +123,43 @@
         margin-top: 2em;
     }
 
+    .hamburger, .close {
+        display: none;
+    }
+
     ul {
         display: flex;
         flex-direction: row;
-        margin: auto;
+        justify-content: flex-end;
         background-color: #0b0d17a9;
+        width: 80%;
+        transform: scale(1,1);
+        opacity: 1;
+        bottom: 0;
+        padding: 0;
     }
 
     li {
         list-style-type: none;
-        margin: 0px 2em;
-        padding: 35px 0;
+        margin-left: 7em;
+        padding: 1em;
+        opacity: 1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 1vw;
     }
 
     li:hover {
         color: #15f4ee;
         border-bottom: 3px solid rgb(143, 143, 202);
         cursor: pointer;
-        padding: 2% 0;
-    }
-
-    .blankSpan1 {
-        width: 30vw;
     }
 
     .activeLink {
         border-bottom: 3px solid rgb(255, 255, 255);
-        padding: 2% 0;
+        border-right: none;
     }
 
     /* logo */
@@ -50,54 +168,4 @@
         margin-left: 30px;
     }
 
-}
-
-/*            */
-/*            */
-/* For Mobile */
-.container {
-    font-family: 'Barlow Condensed', sans -serif;
-    font-size: 1rem;
-    color: #ffffff;
-    letter-spacing: 2.35px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    top: 1em;
-    z-index: 999;
-}
-
-ul {
-    display: flex;
-    flex-direction: row;    
-    background-color: #0b0d17a9;
-}
-
-li {
-    list-style-type: none;
-    margin: 0px 2em;
-    padding: 35px 0;
-}
-
-li:hover {
-    color: #15f4ee;
-    border-bottom: 3px solid rgb(143, 143, 202);
-    cursor: pointer;
-    padding: 2% 0;
-}
-
-.blankSpan1 {
-    width: 30vw;
-}
-
-.activeLink {
-    border-bottom: 3px solid rgb(255, 255, 255);
-    padding: 2% 0;
-}
-
-/* logo */
-
-.logoContainer {
-    margin-left: 30px;
 }
