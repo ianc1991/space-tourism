@@ -1,6 +1,138 @@
+div.container {
+    background: url('../../../assets/destination/background-destination-desktop.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.innerContainer {
+    margin-top: 20vmin;
+}
+
+p.title {
+    font-family: 'Barlow Condensed', sans -serif;
+    color: white;
+    letter-spacing: 2.2px;
+    font-size: 30px;
+}
+
+span {
+    color: #545c85;
+    
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Barlow Condensed', sans -serif;
+    font-size: 16px;
+    color: #D0D6F9;
+    padding: 0;
+}
+
+li {
+    margin: 12px;
+}
+
+a {
+    border-bottom: 3px solid transparent;
+}
+
+a:hover {
+    cursor: pointer;
+    border-bottom: 3px solid rgb(143, 143, 202)
+}
+
+.activeTab {
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 12vmin;
+}
+
+
+.planetContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planetDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.planetImage {
+    max-width: 445px;
+    max-height: 445px;
+    height: 20vh;
+    width: 20vh;
+}
+
+.animate {
+    animation: fadeIn 1.5s;
+}
+
+.isDisabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:100%;}
+}
+
+.planetText {
+    width: 80%;
+    font-family: 'Barlow Condensed', sans -serif;
+    color: #D0D6F9;
+    font-size: max(1.2vw, 15px);
+    line-height: 1.5;
+}
+
+hr {
+    width: 60%;
+}
+
+.distanceContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.avgDistance, .travelTime {
+    font-family: 'Barlow Condensed', sans -serif;
+    font-size: 4vmin;
+    letter-spacing: 1.5px;
+    color: #D0D6F9;
+}
+
+.travelTimeContainer {
+    margin-left: 10px;
+}
+
+.avgDistanceText, .travelTimeText {
+    font-family: 'Bellefair';
+    font-size: 3vmin;    
+}
 
 /* For desktop: */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
 
     div.container {
         background: url('../../../assets/destination/background-destination-desktop.jpg');
@@ -9,7 +141,7 @@
         -o-background-size: cover;
         background-size: cover;
         height: 100vh;
-        overflow: hidden;
+        overflow: scroll;
     }
 
     .innerContainer {
@@ -17,65 +149,20 @@
         height: 70vh;
     }
 
-    p.title {
-        font-family: 'Barlow Condensed', sans -serif;
-        color: white;
-        letter-spacing: 2.2px;
-        font-size: 30px;
-    }
-
-    span {
-        color: #545c85;
-        
-    }
-
     ul {
-        display: flex;
-        list-style-type: none;
-        width: 100%;
-        justify-content: center;
-        padding-right: 100px;
         font-family: 'Barlow Condensed', sans -serif;
         font-size: 16px;
         color: #D0D6F9;
     }
 
-    li {
-        margin: 12px;
-    }
-
-    a {
-        border-bottom: 3px solid transparent;
-    }
-
-    a:hover {
-        cursor: pointer;
-        border-bottom: 3px solid rgb(143, 143, 202)
-    }
-
-    .activeTab {
-        border-bottom: 3px solid white;
-        color: white;
-    }
-
-    h2 {
-        text-align: center;
-        margin-top: 5px;
-        margin-bottom: 0;
-        width: 100%;
-    }
-
 
     .planetContainer {
+        all:unset;
         display: flex;
         height: 60vh;
     }
 
     .planetDescription {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
         padding-right: 10em;
         
     }
@@ -88,54 +175,16 @@
         width: 40vw;
     }
 
-
-    // TODO - animate things on switch
-    .animate {
-        animation: fadeIn 1.5s;
-    }
-
-    .isDisabled {
-        cursor: not-allowed;
-        opacity: 0.5;
-        pointer-events: none;
-    }
-
-    @keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:100%;}
-    }
-
     .planetText {
         width: 60%;
-        font-family: 'Barlow Condensed', sans -serif;
-        color: #D0D6F9;
-        font-size: max(1.2vw, 15px);
-        line-height: 1.5;
     }
 
-    hr {
-        width: 60%;
-    }
-
-    .distanceContainer {
-        display: flex;
-        justify-content: space-between;
-        width: 60%;
-    }
-
-    .avgDistance, .travelTime {
-        font-family: 'Barlow Condensed', sans -serif;
+    .avgDistance, .travelTime {        
         font-size: 1.3vw;
         letter-spacing: 2.35px;
-        color: #D0D6F9;
-    }
-
-    .travelTimeContainer {
-        margin-left: 10px;
     }
 
     .avgDistanceText, .travelTimeText {
-        font-family: 'Bellefair';
         font-size: 1.5vw;    
     }
 }

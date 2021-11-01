@@ -29,13 +29,13 @@ div.container {
 h5 {
     font-family: 'Barlow Condensed', sans -serif;
     color: #D0D6F9;
-    font-size: 3vw;
+    font-size: 3vmin;
     letter-spacing: 4.75px;
     margin-bottom: 1%;
 }
 
 h1 {
-    font-size: 15vw;
+    font-size: 15vmin;
     margin-top: 1%;
     margin-bottom: 0;
     margin-right: 0;
@@ -102,7 +102,7 @@ button {
     h5 {
         font-family: 'Barlow Condensed', sans -serif;
         color: #D0D6F9;
-        font-size: 1.2vw;
+        font-size: 2vmin;
         letter-spacing: 4.75px;
         margin-bottom: 1%;
     }
@@ -117,7 +117,7 @@ button {
         width: 40%;
         font-family: 'Barlow Condensed', sans -serif;
         color: #D0D6F9;
-        font-size: 1.1vw;
+        font-size: 1.9vmin;
         line-height: 1.5;
     }
 
@@ -166,16 +166,16 @@ button {
         overflow:auto;
     }
 
-    h1 {
-        font-size: 7vw;
-    }
+    // h1 {
+    //     font-size: 7vw;
+    // }
 
-    h5 {
-        font-size: 2.5vw;
-    }
+    // h5 {
+    //     font-size: 2.5vw;
+    // }
 
-    p {
-        font-size: 1.5vw;
-        width: 40%;
-    }
+    // p {
+    //     font-size: 2vw;
+    //     width: 40%;
+    // }
 }
