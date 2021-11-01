@@ -1,5 +1,5 @@
 <div class="container">
-    <input id="nav-toggle-id" type="checkbox" class="nav-toggle">
+    <input id="nav-toggle-id" type="checkbox" class="nav-toggle" [checked]="isChecked">
     <div class="logoContainer">
         <div class="logo">
             <img src='../../../assets/shared/logo.svg'>
@@ -16,11 +16,17 @@
     </div>
 
     <nav>
-        <ul>
-            <li routerLinkActive='activeLink' routerLink='home'><span class="nav-number">00</span> HOME</li>
-            <li routerLinkActive='activeLink' routerLink='destination'><span class="nav-number">01</span> DESTINATION</li>
-            <li routerLinkActive='activeLink' routerLink='crew'><span class="nav-number">02</span> CREW</li>
-            <li routerLinkActive='activeLink' routerLink='technology'><span class="nav-number">03</span> TECHNOLOGY</li>
+        <ul class="dropDownLinks">
+            <li routerLinkActive='activeLink' routerLink='home' (click)='closeMenu()'>00 HOME</li>
+            <li routerLinkActive='activeLink' routerLink='destination' (click)='closeMenu()'>01 DESTINATION</li>
+            <li routerLinkActive='activeLink' routerLink='crew' (click)='closeMenu()'>02 CREW</li>
+            <li routerLinkActive='activeLink' routerLink='technology' (click)='closeMenu()'>03 TECHNOLOGY</li>
+        </ul>
+        <ul class="regularLinks">
+            <li routerLinkActive='activeLink' routerLink='home'>00 HOME</li>
+            <li routerLinkActive='activeLink' routerLink='destination'>01 DESTINATION</li>
+            <li routerLinkActive='activeLink' routerLink='crew'>02 CREW</li>
+            <li routerLinkActive='activeLink' routerLink='technology'>03 TECHNOLOGY</li>
         </ul>
     </nav>
 
