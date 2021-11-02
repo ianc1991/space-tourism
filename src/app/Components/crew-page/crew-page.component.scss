@@ -11,7 +11,6 @@ div.container {
     width: auto;
     height: 100vh;
     overflow:auto;
-
 }
 
 .innerContainer {
@@ -88,7 +87,7 @@ img {
     justify-content: center;
 }
 
-.sliderButtons {    
+.sliderButtons {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -102,7 +101,7 @@ img {
     width: 15px;
     height: 15px;
     background: rgb(192, 187, 187);
-    border-radius: 50%
+    border-radius: 50%;
 }
 
 .sliderButtons a:hover {
@@ -178,7 +177,6 @@ img {
 
     .imgContainer2 {
         all: unset;
-        
     }
 
     img {
@@ -193,7 +191,7 @@ img {
         justify-content: flex-start;
     }
 
-    .sliderButtons {    
+    .sliderButtons {
         display: flex;
         justify-content: space-around;
         list-style: none;
@@ -216,5 +214,5 @@ img {
 
     .activeTab {
         background: white !important;
-    }  
+    }
 }

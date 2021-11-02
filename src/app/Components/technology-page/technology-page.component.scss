@@ -1,6 +1,126 @@
 
+div.container {
+    background: url('../../../assets/technology/background-technology-desktop.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    overflow: auto;
+}
+
+.innerContainer {
+    margin-top: 20vmin;
+    justify-content: center;
+}
+
+.mainContentContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.launchText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p.title {
+    font-family: 'Barlow Condensed', sans -serif;
+    color: white;
+    letter-spacing: 2.2px;
+    font-size: 22px;
+    text-align: center;
+}
+
+span {
+    color: #545c85;
+}
+
+h3 {
+    font-family: 'Bellefair';
+    font-size:30px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;
+    line-height: 1;
+}
+
+.bodyText {
+    font-family: 'Barlow Condensed', sans -serif;
+    color: #D0D6F9;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 0;
+    width: 80vw;
+}
+
+.bodyText p {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vw;
+    max-width: 270px;
+    margin-top: 10px;
+}
+
+button {
+    font-family: 'Barlow Condensed', sans -serif;
+    font-size: 3vw;
+    color: white;
+    background-color: transparent;
+    max-width: 50px;
+    max-height: 50px;
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: solid 1px #545c85;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+button:active {
+    background-color: transparent;
+}
+
+.activeTab {
+    background-color: white;
+    color: black;
+}
+
+h5 {
+    font-family: 'Barlow Condensed', sans -serif;
+    color: #D0D6F9;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    margin-bottom: 1%;
+}
+
+.imgContainer {
+    text-align: center;
+    max-height: 35vh;
+}
+
+img {
+    height: 100%;
+}
+
 /* For desktop: */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     div.container {
         background: url('../../../assets/technology/background-technology-desktop.jpg');
         -webkit-background-size: cover;
@@ -9,14 +129,12 @@
         background-size: cover;
         width: auto;
         height: 100vh;
-        overflow: scroll;
-        overflow-x: auto;
-        overflow-y: auto;
     }
 
     .innerContainer {
         margin: 30vh 0 0 10%;
         height: 70vh;
+        justify-content: flex-start;
     }
 
     .launchTextContainer {
@@ -25,90 +143,57 @@
 
     .mainContentContainer {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        
     }
 
     .launchText {
+        all: unset;
         display: flex;
         width: 50%;
     }
 
-    // TODO - Refactor p.title and span to styles.scss - this is used multiple times.
     p.title {
-        font-family: 'Barlow Condensed', sans -serif;
-        color: white;
-        letter-spacing: 2.2px;
+        text-align: left;
         font-size: 30px;
     }
 
-    span {
-        color: #545c85;
-    }
-
     h3 {
-        font-family: 'Bellefair';
         font-size:3vw;
-        color: white;
-        margin-top: 0;
-        margin-bottom: 0;
         width: 30vw;
+        text-align: left;
     }
 
     .bodyText {
-        font-family: 'Barlow Condensed', sans -serif;
-        color: #D0D6F9;
         font-size: 1.5vw;
-        line-height: 1.5;
-        margin-top: 0;
         margin-left: 70px;
         width: 30vw;
     }
 
+    .bodyText p {
+        text-align: left;
+    }
+
     .buttons {
-        display: flex;
         flex-direction: column;
+        all: unset;
+        
     }
 
     button {
-        font-family: 'Barlow Condensed', sans -serif;
         font-size: 20px;
-        color: white;
-        background-color: transparent;
         max-width: 85px;
         max-height: 85px;
         width: 6vw;
         height: 6vw;
-        border-radius: 50%;
         margin-bottom: 2vh;
-        border: solid 1px #545c85;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: white;
-        color: black;
-    }
-
-    button:active {
-        background-color: transparent;
-    }
-
-    .activeTab {
-        background-color: white;
-        color: black;
-    }
-
-    h5 {
-        font-family: 'Barlow Condensed', sans -serif;
-        color: #D0D6F9;
-        font-size: 28px;
-        letter-spacing: 4.75px;
-        margin-bottom: 1%;
     }
 
     img {
-        max-height: 580px;
-        max-width: 580px;
+        all: unset;
+        max-height: 60vh;
+        max-width: 60vh;
         height: 40vw;
         width:40vw;
         
