@@ -16,7 +16,8 @@ p.title {
     font-family: 'Barlow Condensed', sans -serif;
     color: white;
     letter-spacing: 2.2px;
-    font-size: 30px;
+    font-size: 22px;
+    text-align: center;
 }
 
 span {
@@ -103,6 +104,7 @@ h2 {
     color: #D0D6F9;
     font-size: max(1.2vw, 15px);
     line-height: 1.5;
+    text-align: center;
 }
 
 hr {
@@ -141,12 +143,17 @@ hr {
         -o-background-size: cover;
         background-size: cover;
         height: 100vh;
-        overflow: scroll;
+        overflow: auto;
     }
 
     .innerContainer {
         margin: 30vh 0 0 10%;
         height: 70vh;
+    }
+
+    p.title {
+        font-size: 30px;
+        text-align: left;
     }
 
     ul {
@@ -177,6 +184,7 @@ hr {
 
     .planetText {
         width: 60%;
+        text-align: left;
     }
 
     .avgDistance, .travelTime {        
