@@ -6,7 +6,7 @@
 /*            */
 /*            */
 /* For Mobile */
-.container {
+.navContainer {
     font-family: 'Barlow Condensed', sans -serif;
     font-size: 1rem;
     color: #ffffff;
@@ -42,9 +42,7 @@
     display: block;
 }
 
-.nav-toggle:checked ~ nav ul.dropDownLinks {
-    transform: scale(1, 1);
-}
+
 
 .close {
     display: none;
@@ -78,6 +76,10 @@ ul.dropDownLinks {
     position:absolute;
     right: 0;
     top: -20px;
+}
+
+.nav-toggle:checked ~ nav ul.dropDownLinks {
+    transform: scale(1, 1);
 }
 
 .nav-toggle:checked ~ nav .dropDownLinks li {
@@ -122,18 +124,12 @@ li:hover {
         display: none;
     }
     
-    .container {
-        font-family: 'Barlow Condensed', sans -serif;
+    .navContainer {
         font-size: 1vw;
-        color: #ffffff;
-        letter-spacing: 2.35px;
         display: flex;
-        position: fixed;
-        width: 100%;
         justify-content: space-between;
         align-items: center;
         margin-top: 2.5em;
-        top: 0;
     }
 
     ul.regularLinks {
@@ -161,8 +157,6 @@ li:hover {
         border-bottom: 3px solid rgb(255, 255, 255);
         border-right: none;
     }
-
-    /* logo */
 
     .logoContainer {
         width: 0;

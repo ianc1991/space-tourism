@@ -1,18 +1,11 @@
-
 div.container {
     background: url('../../../assets/technology/background-technology-desktop.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    width: auto;
     height: 100vh;
     overflow: auto;
-}
-
-.innerContainer {
-    margin-top: 20vmin;
-    justify-content: center;
 }
 
 .mainContentContainer {
@@ -28,22 +21,8 @@ div.container {
     align-items: center;
 }
 
-p.title {
-    font-family: 'Barlow Condensed', sans -serif;
-    color: white;
-    letter-spacing: 2.2px;
-    font-size: 22px;
-    text-align: center;
-}
-
-span {
-    color: #545c85;
-}
-
-h3 {
-    font-family: 'Bellefair';
-    font-size:30px;
-    color: white;
+.bodyTitle {
+    width: 100%;
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
@@ -51,17 +30,17 @@ h3 {
     line-height: 1;
 }
 
-.bodyText {
-    font-family: 'Barlow Condensed', sans -serif;
-    color: #D0D6F9;
-    font-size: 18px;
-    line-height: 1.5;
+.bodyTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 0;
-    width: 80vw;
+    width: 80%;
 }
 
-.bodyText p {
-    text-align: center;
+.bodyTextContainer p {
+    font-family: 'Barlow Condensed', sans -serif;
+    color: #D0D6F9
 }
 
 .buttons {
@@ -127,12 +106,10 @@ img {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        width: auto;
         height: 100vh;
     }
 
     .innerContainer {
-        margin: 30vh 0 0 10%;
         height: 70vh;
         justify-content: flex-start;
     }
@@ -145,7 +122,6 @@ img {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
     }
 
     .launchText {
@@ -154,25 +130,19 @@ img {
         width: 50%;
     }
 
-    p.title {
-        text-align: left;
-        font-size: 30px;
-    }
-
     h3 {
         font-size:3vw;
         width: 30vw;
         text-align: left;
     }
 
-    .bodyText {
-        font-size: 1.5vw;
-        margin-left: 70px;
-        width: 30vw;
+    .bodyTextContainer {
+        display: block;
+        margin-left: 80px;
     }
 
-    .bodyText p {
-        text-align: left;
+    .bodyText {
+        width: 30vw;
     }
 
     .buttons {

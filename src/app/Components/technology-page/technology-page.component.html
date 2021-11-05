@@ -11,10 +11,10 @@
                         <button (click)='toggleTechDescription("port")' [ngClass]="{'activeTab': activeTab === 'port'}">2</button>
                         <button (click)='toggleTechDescription("capsule")' [ngClass]="{'activeTab': activeTab === 'capsule'}">3</button>
                     </div>
-                    <div class="bodyText">
+                    <div class="bodyTextContainer">
                         <p>The terminology..</p>
-                        <h3>{{techName}}</h3>
-                        <p>{{bodyText}}</p>
+                        <h3 class="bodyTitle">{{techName}}</h3>
+                        <p class="bodyText">{{bodyText}}</p>
                     </div>
                 </div>
             </div>

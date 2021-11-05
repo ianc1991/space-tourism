@@ -1,48 +1,26 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
 div.container {
     background: url('../../../assets/crew/background-crew-desktop.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    width: auto;
     height: 100vh;
     overflow:auto;
-}
-
-.innerContainer {
-    margin-top: 20vmin;
-    justify-content: center;
 }
 
 .crewContainer {
     display: flex;
     flex-direction: column;
-    height: 60vh;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
 }
 
 .crewDescription {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;    
-}
-
-p.title {
-    font-family: 'Barlow Condensed', sans -serif;
-    color: white;
-    letter-spacing: 2.2px;
-    font-size: 22px;
-    text-align: center;
-}
-
-span {
-    color: #545c85;
 }
 
 h4 {
@@ -54,32 +32,14 @@ h4 {
     margin-top: 0;
 }
 
-h3 {
-    font-family: 'Bellefair';
-    font-size: 30px;
-    color: white;
-    margin-top: 0;
-}
-
-.crewText {
-    font-family: 'Barlow Condensed', sans -serif;
-    color: #D0D6F9;
-    font-size: 18px;
-    line-height: 1.5;
-    width: 80%;
-    margin: 0 auto;
-}
-
 .imgContainer {
-    height: 300px;
-    width: 80%;
+    max-height: 30vh;
+    text-align: center;
 }
 
 img {
-    object-fit: contain;
     border-bottom: solid 1px grey;
     height: 100%;
-    width: 100%;
 }
 
 .sliderButtonsContainer {
@@ -132,10 +92,6 @@ img {
         display: none;
     }
 
-    .innerContainer {
-        margin: 30vh 0 0 10%;
-    }
-
     .crewContainer {
         all: unset;
         display: flex;
@@ -145,11 +101,6 @@ img {
     .crewDescription {
         all: unset;
         margin-right: 22%;
-    }
-
-    p.title {
-        font-size: 30px;
-        text-align: left;
     }
 
     h4 {
@@ -165,11 +116,7 @@ img {
         font-size: 50px;
     }
 
-    .crewText {
-        font-family: 'Barlow Condensed', sans -serif;
-        color: #D0D6F9;
-        font-size: 20px;
-        line-height: 1.5;
+    .bodyText {        
         min-height: 50%;
         max-width: 400px;
         margin-left: 0;

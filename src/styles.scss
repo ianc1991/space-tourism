@@ -3,19 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 
 
-html {
+html,body {
     margin: 0;
     padding: 0;
 }
 body {
-    margin: 0;
-    padding: 0;
     background-color: black;
 }
 
 h1 {
     font-family: 'Bellefair';
-    //font-size: 150px;
     color: white;
 }
 
@@ -23,4 +20,55 @@ h2 {
     font-family: 'Bellefair';
     font-size: 100px;
     color: white
+}
+
+p.title { // Title of the header text (e.g. 01 Pick Your Destination)
+    font-family: 'Barlow Condensed', sans -serif;
+    color: white;
+    letter-spacing: 2.2px;
+    font-size: 22px;
+    text-align: center;
+}
+
+p.title span { // Number for p.title
+    color: #545c85;
+}
+
+.innerContainer { // The main content div that holds image/text
+    margin-top: 20vmin;
+    justify-content: center;
+}
+
+.bodyTitle { //e.g. Crew name / tech name
+    font-family: 'Bellefair';
+    font-size: 30px;
+    color: white;
+    margin-top: 0;
+}
+
+.bodyText { // Main paragraph text
+    font-family: 'Barlow Condensed', sans -serif;
+    width: 80%;
+    color: #D0D6F9;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+/* For Desktop */
+@media only screen and (min-width: 1200px) {
+    .innerContainer { // The main content div that holds image/text
+        margin: 30vh 0 0 10%;
+    }
+
+    .bodyText { // Main paragraph text
+        text-align: left;
+        font-size: 20px;
+    }
+
+    p.title { // Title of the header text (e.g. 01 Pick Your Destination)
+        text-align: left;
+        font-size: 30px;
+    }
 }

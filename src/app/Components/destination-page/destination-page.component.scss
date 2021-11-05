@@ -5,24 +5,7 @@ div.container {
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
-    overflow: scroll;
-}
-
-.innerContainer {
-    margin-top: 20vmin;
-}
-
-p.title {
-    font-family: 'Barlow Condensed', sans -serif;
-    color: white;
-    letter-spacing: 2.2px;
-    font-size: 22px;
-    text-align: center;
-}
-
-span {
-    color: #545c85;
-    
+    overflow: auto;
 }
 
 ul {
@@ -98,15 +81,6 @@ h2 {
     100% {opacity:100%;}
 }
 
-.planetText {
-    width: 80%;
-    font-family: 'Barlow Condensed', sans -serif;
-    color: #D0D6F9;
-    font-size: max(1.2vw, 15px);
-    line-height: 1.5;
-    text-align: center;
-}
-
 hr {
     width: 60%;
 }
@@ -147,13 +121,7 @@ hr {
     }
 
     .innerContainer {
-        margin: 30vh 0 0 10%;
         height: 70vh;
-    }
-
-    p.title {
-        font-size: 30px;
-        text-align: left;
     }
 
     ul {
@@ -182,9 +150,8 @@ hr {
         width: 40vw;
     }
 
-    .planetText {
+    .bodyText {
         width: 60%;
-        text-align: left;
     }
 
     .avgDistance, .travelTime {        
