@@ -139,27 +139,6 @@ img {
     }
 
     .sliderButtons {
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-        width: 200px;
-        padding-left: 0;
         margin: 0;
-    }
-
-    .sliderButtons a {
-        width: 15px;
-        height: 15px;
-        background: rgb(192, 187, 187);
-        border-radius: 50%
-    }
-
-    .sliderButtons a:hover {
-        background: white;
-        cursor: pointer;
-    }
-
-    .activeTab {
-        background: white !important;
     }
 }

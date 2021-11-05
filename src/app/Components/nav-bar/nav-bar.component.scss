@@ -1,8 +1,3 @@
-
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
 /*            */
 /*            */
 /* For Mobile */
@@ -42,8 +37,6 @@
     display: block;
 }
 
-
-
 .close {
     display: none;
 }
@@ -51,7 +44,6 @@
 .nav-toggle:checked ~ div .hamburger {
     display: none;
 }
-
 
 nav {
     position:absolute;

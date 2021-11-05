@@ -8,6 +8,8 @@ div.container {
     overflow: auto;
 }
 
+/* List of Planets to select */
+
 ul {
     display: flex;
     list-style-type: none;
@@ -36,6 +38,8 @@ a:hover {
     border-bottom: 3px solid white;
     color: white;
 }
+
+/* End of Planets to select */
 
 h2 {
     text-align: center;
@@ -80,6 +84,8 @@ h2 {
     0% {opacity:0;}
     100% {opacity:100%;}
 }
+
+/* Averages */
 
 hr {
     width: 60%;

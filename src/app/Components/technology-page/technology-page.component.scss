@@ -38,6 +38,8 @@ div.container {
     width: 80%;
 }
 
+/* Buttons */
+
 .bodyTextContainer p {
     font-family: 'Barlow Condensed', sans -serif;
     color: #D0D6F9
@@ -81,6 +83,8 @@ button:active {
     color: black;
 }
 
+/* End of Buttons */
+
 h5 {
     font-family: 'Barlow Condensed', sans -serif;
     color: #D0D6F9;
@@ -119,7 +123,6 @@ img {
     }
 
     .mainContentContainer {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -145,10 +148,10 @@ img {
         width: 30vw;
     }
 
+    /* Buttons */
+
     .buttons {
-        flex-direction: column;
         all: unset;
-        
     }
 
     button {
@@ -159,6 +162,8 @@ img {
         height: 6vw;
         margin-bottom: 2vh;
     }
+
+    /* End of Buttons */
 
     img {
         all: unset;
