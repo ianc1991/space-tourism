@@ -1,5 +1,11 @@
 # SpaceTourism
 
+A project idea I recieved from https://www.frontendmentor.io/ where you are provided with assets and a Sketch file. Project was completed using the Angular framework. 
+
+See a recorded demo of this project on my Portfolio page here: https://iancognita.github.io/portfolio
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
 ## Development server
