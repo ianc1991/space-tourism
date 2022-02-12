@@ -35,7 +35,7 @@ div.container {
     flex-direction: column;
     align-items: center;
     margin-top: 0;
-    width: 80%;
+    //width: 80%;
 }
 
 /* Buttons */
@@ -143,6 +143,10 @@ img {
     .bodyTextContainer {
         display: block;
         margin-left: 80px;
+    }
+
+    .bodyTitle {
+        text-align: left;
     }
 
     .bodyText {
