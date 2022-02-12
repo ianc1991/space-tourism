@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url("https://use.typekit.net/eay3jzz.css%22");
 
 
 html,body {
@@ -12,10 +13,16 @@ body {
 }
 
 h1 {
+    font-family: superior-title, serif;
+    font-weight: 400;
+    font-style: normal;
     color: white;
 }
 
 h2 {
+    font-family: superior-title, serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 100px;
     color: white
 }
@@ -38,6 +45,9 @@ p.title span { // Number for p.title
 }
 
 .bodyTitle { //e.g. Crew name / tech name
+    font-family: superior-title, serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 30px;
     color: white;
     margin-top: 0;
