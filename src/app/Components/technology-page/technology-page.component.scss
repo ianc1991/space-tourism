@@ -11,7 +11,8 @@ div.container {
 .mainContentContainer {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .launchText {
@@ -125,7 +126,7 @@ img {
 
     .mainContentContainer {
         flex-direction: row;
-        justify-content: space-between;
+        //justify-content: space-between;
     }
 
     .launchText {
