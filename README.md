@@ -2,7 +2,7 @@
 
 A project idea I recieved from https://www.frontendmentor.io/ where you are provided with assets and a Sketch file. Project was completed using the Angular framework. 
 
-See a recorded demo of this project on my Portfolio page here: https://iancognita.github.io/portfolio
+This project is hosted here: https://spacetourism-5a715.web.app/
 
 
 
