@@ -6,7 +6,7 @@ This project is hosted here: https://spacetourism-5a715.web.app/
 
 ## Overview
 
-My primary goal for this project was to use pure TypeScript, CSS, HTML, without any additional frameworks.
+My primary goal for this project was to use pure TypeScript, CSS, HTML, without any additional frameworks (besides Angular).
 
 ### Splash Page
 
