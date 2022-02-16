@@ -33,7 +33,7 @@ altogether when another link was clicked, but ultimately decided on disabling th
 ### Crew & Technology
 
 I'll add these together as they were mostly the same. My main issue was getting the pictures to all size properly and responsively. Since some of the crew
-pictures were quite different sizes, I'd often find that one would slightly out of place. I was also getting some issues in other browsers with sizing, which 
+pictures were quite different sizes, I'd often find that one would be slightly out of place. I was also getting some issues in other browsers with sizing, which 
 I believe to be due to the 'vh' unit I was experimenting with. Images were seemingly not being set to the right size, which is why I included a max-height. 
 
 
