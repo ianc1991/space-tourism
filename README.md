@@ -6,8 +6,6 @@ This project is hosted here: https://spacetourism-5a715.web.app/
 
 ## Overview
 
-My primary goal for this project was to use pure TypeScript, CSS, HTML, without any additional frameworks (besides Angular).
-
 ### Splash Page
 
 The main thing I'm happy about doing on the home page is having the 'Explore' button change to an image of the Moon when hovering. It almost creates
